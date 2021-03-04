@@ -790,11 +790,6 @@
             <Pin Id="PPVsrnFV3L7N6WZ1L3wSRJ" Name="Local Audio Track" Kind="InputPin" Bounds="439,422" />
             <Pin Id="Hb4ZIhO5o6fOrZ2CYn4Sow" Name="Peer Connection" Kind="InputPin" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="C7hsChuG7BHMlb9hpiNUE0">
             <Fragment Id="BupBiO5lDrmPI6uahRqoZC" Patch="V0DJFNrVeCyQRkWtwvs2cX" Enabled="true" />
             <Fragment Id="T1Opb8iiRAyNC2jUDeaxSP" Patch="KG0O8ZkRR3fMIXVBbaXKsT" Enabled="true" />
@@ -885,17 +880,19 @@
               <Choice Kind="TypeFlag" Name="MutableArray" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="384,568,119,80" Id="IuRoZXwYPFvPBtqhs2qoS5">
+          <Node Bounds="158,568,345,120" Id="IuRoZXwYPFvPBtqhs2qoS5">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
               <FullNameCategoryReference ID="Primitive" />
             </p:NodeReference>
             <Pin Id="FnLqYVvAYjjNUtiR6tZaJ9" Name="Condition" Kind="InputPin" />
+            <ControlPoint Id="Ak3C2ABntqRNaEKnQdd8Fa" Bounds="486,574" Alignment="Top" />
+            <ControlPoint Id="StHS6uxnHjXLz1NYMxT5Au" Bounds="486,642" Alignment="Bottom" />
             <Patch Id="BtKQ6EzrhkyQbiCKB0oyRZ" ManuallySortedPins="true">
               <Patch Id="Lf4HnVGdnCfMEk6oClMwZR" Name="Create" ManuallySortedPins="true" />
               <Patch Id="PVyIZJ1EQfyOp6dKc5O4sO" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="396,598,51,19" Id="K6lQZjv96OQODLVVu7CL9R">
+              <Node Bounds="325,598,80,26" Id="K6lQZjv96OQODLVVu7CL9R">
                 <p:NodeReference LastCategoryFullName="Microsoft.MixedReality.WebRTC.I420AVideoFrame" LastSymbolSource="Microsoft.MixedReality.WebRTC.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="WebRTC" />
@@ -905,9 +902,17 @@
                 <Pin Id="GyMDWv4lndsNMtTNxBkeEZ" Name="Buffer" Kind="InputPin" />
                 <Pin Id="LvpTyLnx3cWNNUkpv0RGkm" Name="Output" Kind="StateOutputPin" />
               </Node>
+              <Node Bounds="170,641,80,26" Id="MRopOLJ1BHMQUY7EXdVUAg">
+                <p:NodeReference LastCategoryFullName="Microsoft.MixedReality.WebRTC.I420AVideoFrame" LastSymbolSource="Microsoft.MixedReality.WebRTC.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="I420AVideoFrame" />
+                  <Choice Kind="OperationCallFlag" Name="strideY" />
+                </p:NodeReference>
+                <Pin Id="TmMeqZlpwM9P7DeiI1yIIV" Name="Input" Kind="StateInputPin" />
+                <Pin Id="G9onBox3AI4QLQMnyzE5vG" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="AOPh2JdmgBNMBRVY3jrJWC" Name="Stride Y" Kind="OutputPin" />
+              </Node>
             </Patch>
-            <ControlPoint Id="Ak3C2ABntqRNaEKnQdd8Fa" Bounds="486,574" Alignment="Top" />
-            <ControlPoint Id="StHS6uxnHjXLz1NYMxT5Au" Bounds="486,642" Alignment="Bottom" />
           </Node>
           <Node Bounds="199,163" Id="DY7rji8PN0sLs3cHI26gmB">
             <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="WebRTCTestGradual.vl">
@@ -918,7 +923,7 @@
             <Pin Id="HfKMVUibiwRLcYbQUftnSl" Name="Is Connected" Kind="OutputPin" />
           </Node>
           <Pad Id="Sx7cyi8YpSEMVTpPW2wItN" Comment="Is Connected" Bounds="297,205,35,35" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="-226,467,229,135" Id="HNzBNoZKHuDLHMq8ADEF6B">
+          <Node Bounds="-223,707,229,135" Id="HNzBNoZKHuDLHMq8ADEF6B">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -928,7 +933,7 @@
             <Patch Id="INLTlJUQOXhLnLpyU6MdHq" ManuallySortedPins="true">
               <Patch Id="KLsW8muTwQiLdYE8lwx2DZ" Name="Create" ManuallySortedPins="true" />
               <Patch Id="T2LNzrcm69uQZX6OcC4yV4" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="-169,487,160,95" Id="JPwJHICg91lOPrhPzljUki">
+              <Node Bounds="-166,727,160,95" Id="JPwJHICg91lOPrhPzljUki">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.Experimental.vl">
                   <Choice Kind="ProcessAppFlag" Name="TryCatch" />
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -943,10 +948,10 @@
                     <Pin Id="M6zuwAVOd5iN5VRzp0hs0k" Name="Input 1" Kind="InputPin" />
                     <Pin Id="Ebpf0H1G3wILoUkfaMtuGc" Name="Output" Kind="OutputPin" />
                   </Patch>
-                  <ControlPoint Id="IdWJwPriEQdPSyIlelRcYe" Bounds="-165,575" />
-                  <ControlPoint Id="VwtEGzK7i9UPNixkLL7X04" Bounds="-105,495" />
-                  <ControlPoint Id="G3O573tnYQRMaSYrBsFspD" Bounds="-105,575" />
-                  <Node Bounds="-145,528,124,26" Id="OiNAET6VY7HNTFxe7OSkE6">
+                  <ControlPoint Id="IdWJwPriEQdPSyIlelRcYe" Bounds="-162,815" />
+                  <ControlPoint Id="VwtEGzK7i9UPNixkLL7X04" Bounds="-102,735" />
+                  <ControlPoint Id="G3O573tnYQRMaSYrBsFspD" Bounds="-102,815" />
+                  <Node Bounds="-142,768,124,26" Id="OiNAET6VY7HNTFxe7OSkE6">
                     <p:NodeReference LastCategoryFullName="Microsoft.MixedReality.WebRTC.IVideoSource" LastSymbolSource="Microsoft.MixedReality.WebRTC.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="AssemblyCategory" Name="Microsoft" />
@@ -969,7 +974,6 @@
             <Pin Id="OaedKu7KNaoNoA2NBxLUvk" Name="Local Video Async" Kind="OutputPin" />
             <Pin Id="NuOtWCgXyCDNxuQ32NdQm6" Name="Local Audio Async" Kind="OutputPin" />
           </Node>
-          <Pad Id="Tqwmm6ZLB5DPbiMdb8ux54" Comment="Device Found" Bounds="82,343,92,65" ShowValueBox="true" isIOBox="true" />
           <Pad Id="U5NVi3LEk1qMzbKBwwzneQ" Bounds="-309,277,460,19" ShowValueBox="true" isIOBox="true" Value="There is a 'frameready' event that takes IVideoSource as input. It needs to be wrapped for VL event handling ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -979,17 +983,77 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="-179,374,86,26" Id="GfUrjl7Vl1yNHu85pNEpsW">
-            <p:NodeReference LastCategoryFullName="Microsoft.MixedReality.WebRTC.LocalVideoTrack" LastSymbolSource="Microsoft.MixedReality.WebRTC.dll">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="FrameEncoding" />
-              <CategoryReference Kind="AssemblyCategory" Name="LocalVideoTrack" NeedsToBeDirectParent="true" />
+          <Node Bounds="-179,371,86,29" Id="FF2JaZNhXyuOZx1ipaXdEP">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              <FullNameCategoryReference ID="Primitive" />
             </p:NodeReference>
-            <Pin Id="Ry6HoNBs749OOI5tnuj8Hy" Name="Input" Kind="StateInputPin" />
-            <Pin Id="J5J7lRMJrKUNT7AH6bAu0Q" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="NCFKr9dQpZpN5nN1jDwpsM" Name="Frame Encoding" Kind="OutputPin" />
+            <Pin Id="NVOgIibJirtMiSqSvmZ3bU" Name="Condition" Kind="InputPin" />
+            <Patch Id="OoBL56O4eA0NCVtP0iYhWi" ManuallySortedPins="true">
+              <Patch Id="NURRRqKSjdkOVuVwK08kyx" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="ODjbJrxbRzXO71a5QPfjnM" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="-179,374,86,26" Id="GfUrjl7Vl1yNHu85pNEpsW">
+                <p:NodeReference LastCategoryFullName="Microsoft.MixedReality.WebRTC.LocalVideoTrack" LastSymbolSource="Microsoft.MixedReality.WebRTC.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="FrameEncoding" />
+                  <CategoryReference Kind="AssemblyCategory" Name="LocalVideoTrack" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="Ry6HoNBs749OOI5tnuj8Hy" Name="Input" Kind="StateInputPin" />
+                <Pin Id="J5J7lRMJrKUNT7AH6bAu0Q" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="NCFKr9dQpZpN5nN1jDwpsM" Name="Frame Encoding" Kind="OutputPin" />
+              </Node>
+            </Patch>
           </Node>
-          <Pad Id="V0xBxlf2Z78LjQIqBjtqTc" Comment="Frame Encoding" Bounds="-71,419,62,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="-202,304,65,19" Id="GEA26kxL6jyOI87GNV9EuE">
+            <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+            </p:NodeReference>
+            <Pin Id="De20xZbt0ZHM6JvXpZSUXf" Name="X" Kind="InputPin" />
+            <Pin Id="PIxnsS3lEHBQDm4yzdXA27" Name="Result" Kind="OutputPin" />
+            <Pin Id="OOYXTvORDWxNgK4Px3oo32" Name="Not Assigned" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="113,395,104,92" Id="Tem4IAMjuL9OuQqm9kIKm5">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <Pin Id="B8AkiIikYFzMJeyQcO4yqd" Name="Condition" Kind="InputPin" />
+            <Patch Id="TJnU4ZzAW1OLkqvWtq7eTZ" ManuallySortedPins="true">
+              <Patch Id="G4g7xZ0qdyiMPHd0mzGXCR" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="OyHF55FD0nzLBRovXZcKMj" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="125,435,80,26" Id="M6o8Jug6chuL1iY92oGTmp">
+                <p:NodeReference LastCategoryFullName="Microsoft.MixedReality.WebRTC.VideoTrackSource" LastSymbolSource="Microsoft.MixedReality.WebRTC.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Argb32VideoFrameReady" />
+                  <CategoryReference Kind="AssemblyCategory" Name="VideoTrackSource" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+              </Node>
+            </Patch>
+          </Node>
+          <Pad Id="LJMBzSTrsPWPJosiar2iua" Bounds="-283,36,223,20" ShowValueBox="true" isIOBox="true" Value="Tries to implement this example...">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EWDC1iEblBHLWYgTKHmG71" Bounds="-359,63,657,18" ShowValueBox="true" isIOBox="true" Value="https://microsoft.github.io/MixedReality-WebRTC/api/Microsoft.MixedReality.WebRTC.FrameRequest.html">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="VreU7yq0JnxMSKQSSHHdZB" Name="Event/Delegate Problem" Bounds="63,369,276,140">
+            <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
+          </Overlay>
         </Canvas>
         <Patch Id="GTMfO4L8ZMsMSgm1W3n9sH" Name="Create" />
         <Patch Id="IwzYTr0WA7NNe9hzP4QyMi" Name="Update" />
@@ -1010,10 +1074,11 @@
         <Link Id="SD3osFaT0QyMbLVXZG9tuc" Ids="IdWJwPriEQdPSyIlelRcYe,PqjrVXgHNmxNfQuRH0gRP5" IsHidden="true" />
         <Link Id="VvDrdJrzoDvLp8rhMihlQJ" Ids="M6zuwAVOd5iN5VRzp0hs0k,VwtEGzK7i9UPNixkLL7X04" IsHidden="true" />
         <Link Id="KneM7jkeuDjNlHXBmPSLyz" Ids="G3O573tnYQRMaSYrBsFspD,Ebpf0H1G3wILoUkfaMtuGc" IsHidden="true" />
-        <Link Id="PDX7y92dVZIOB46WDsQyV3" Ids="FgUDJsplx9dLOCq4AWgfOn,Tqwmm6ZLB5DPbiMdb8ux54" />
         <Link Id="P4Wb2Qkv9voLtjp4HmLSiy" Ids="Hr6mJdBXVxXN5ePl1z33qn,UAnxPq7WioSPoZTIUOOBUr" />
         <Link Id="IifrEv0DE3bMnCBOmVGmMI" Ids="OaedKu7KNaoNoA2NBxLUvk,Ry6HoNBs749OOI5tnuj8Hy" />
-        <Link Id="MIn6mQF7U5rN4DpOlISiDR" Ids="NCFKr9dQpZpN5nN1jDwpsM,V0xBxlf2Z78LjQIqBjtqTc" />
+        <Link Id="QtOHUBqwRCPLhQKxSU7bLN" Ids="OaedKu7KNaoNoA2NBxLUvk,De20xZbt0ZHM6JvXpZSUXf" />
+        <Link Id="T8Rq6DOvyUmP2pzkBHxa4j" Ids="PIxnsS3lEHBQDm4yzdXA27,NVOgIibJirtMiSqSvmZ3bU" />
+        <Link Id="OuLa8Nuoj84P5plDZVOTGq" Ids="LvpTyLnx3cWNNUkpv0RGkm,TmMeqZlpwM9P7DeiI1yIIV" />
       </Patch>
     </Node>
   </Patch>
